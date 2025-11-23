@@ -7,10 +7,9 @@
     This file contains the hash functions for integer and string keys.
 
    Development History:
-    - 2025/11/11: Initial implementation
-    - 2025/11/17: Refactored to use hash_fn.hpp
+    - 2025/11/23: Initial implementation
 
-   Developer: Yu-Feng Huang <yfhuang@saturn.yzu.edu.tw>
+   Developer: ESlee1006 <s1131532@maul.yzu,edu.tw>
  */
 #include "hash_fn.hpp"
 
