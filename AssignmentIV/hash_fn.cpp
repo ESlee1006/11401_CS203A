@@ -9,7 +9,7 @@
    Development History:
     - 2025/11/23: Initial implementation
 
-   Developer: ESlee1006 <s1131532@maul.yzu,edu.tw>
+   Developer: ESlee1006 <s1131532@mail.yzu.edu.tw>
  */
 #include "hash_fn.hpp"
 
