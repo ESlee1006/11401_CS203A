@@ -9,7 +9,7 @@
    Development History:
     - 2025/11/23: Initial implementation
 
-   Developer: ESlee1006 <s1131532@mail.yzu,edu.tw>
+   Developer: ESlee1006 <s1131532@mail.yzu.edu.tw>
  */
 #ifndef HASH_FN_HPP
 #define HASH_FN_HPP
