@@ -13,10 +13,9 @@
  */
 #include "hash_fn.hpp"
 
-int myHashInt(int key, int m) {
-    key *= 103;
-    key += (key % 10);
-    return key % m;  // basic division method
+int myHashInt(int key, int m) 
+{
+    return ((key * 2654435761u) ^ (key >> 16)) % m;
 }
 
 int myHashString(const std::string& str, int m) {
