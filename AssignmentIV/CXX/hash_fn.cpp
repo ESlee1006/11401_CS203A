@@ -18,7 +18,8 @@ int myHashInt(int key, int m)
     return ((key * 2654435761u) ^ (key >> 16)) % m;
 }
 
-int myHashString(const std::string& str, int m) {
+int myHashString(const std::string& str, int m) 
+{
     unsigned long hash = 0;
     for(int i = 0; i < str.size(); i++)
         hash = hash * 31 + str[i];
