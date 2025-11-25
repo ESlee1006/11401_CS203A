@@ -11,13 +11,14 @@ email: easonlee1006@gmail.com
     return ((key * 2654435761u) ^ (key >> 16)) % m;
 }
 ```
-一開始還想不到適合的hash function，直到藉由AI的建議知道了Knuth multiplier，它具有以下優點：
+一開始還想不到適合的hash function，直到藉由AI的建議知道了Knuth multiplier，並以XOR發散，Knuth multiplier它具有以下優點：
 - 可讓 key 在 mod 空間中分散得很好
 - 只要 bucket 是 2 的次方，分佈會非常完美
 - 避免 key 之間的模式互相干擾
     
 
 ### Non-Integer Key ###
+#### Formula / pseudocode: ####
 ```
     int myHashString(const std::string& str, int m)
 {
@@ -29,4 +30,4 @@ email: easonlee1006@gmail.com
     return static_cast<int>(hash % m);
 }
 ```
-和Integer Key一樣，藉由AI的建議知道了Knuth multiplier，FNV
+和Integer Key一樣，藉由AI的建議知道了FNV，以XOR+乘法進行演算
