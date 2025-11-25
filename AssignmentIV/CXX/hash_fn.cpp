@@ -15,13 +15,15 @@
 
 int myHashInt(int key, int m) 
 {
-    return ((key * 2654435761u) ^ (key >> 16)) % m;
+    return ((key * 2654435761u) ^ (key >> 16)) % m;       // Knuth multiplier
 }
 
-int myHashString(const std::string& str, int m) 
+int myHashString(const std::string& str, int m)
 {
-    unsigned long hash = 0;
-    for(int i = 0; i < str.size(); i++)
-        hash = hash * 31 + str[i];
-    return static_cast<int>(hash % m);  // basic division method
+    uint32_t hash = 2166136261u;      // FNV offset basis
+    for (unsigned char c : str){
+        hash ^= c;
+        hash *= 16777619u;            // FNV prime
+    }
+    return static_cast<int>(hash % m);
 }
