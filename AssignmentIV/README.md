@@ -4,7 +4,7 @@ email: easonlee1006@gmail.com
 
 ## Hash Function ##
 ### Integer Key ###
-- Formula / pseudocode:
+#### Formula / pseudocode: ####
 ```
     int myHashInt(int key, int m) 
 {
