@@ -12,9 +12,9 @@ email: easonlee1006@gmail.com
 }
 ```
 一開始還想不到適合的hash function，直到藉由AI的建議知道了Knuth multiplier，它具有以下優點：
-    - 可讓 key 在 mod 空間中分散得很好
-    - 只要 bucket 是 2 的次方，分佈會非常完美
-    - 避免 key 之間的模式互相干擾
+- 可讓 key 在 mod 空間中分散得很好
+- 只要 bucket 是 2 的次方，分佈會非常完美
+- 避免 key 之間的模式互相干擾
     
 
 ### Non-Integer Key ###
