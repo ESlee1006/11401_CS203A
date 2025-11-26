@@ -15,7 +15,10 @@
 
 int myHashInt(int key, int m) 
 {
-    return ((key * 2654435761u) ^ (key >> 16)) % m;       // Knuth multiplier
+   unsigned int xkey = static_cast<unsigned int>(key);
+   xkey * 2654435761U;
+   xkey ^ (xkey >> 16);
+    return static_cast<int> (xkey % m);       // Knuth multiplier
 }
 
 int myHashString(const std::string& str, int m)
