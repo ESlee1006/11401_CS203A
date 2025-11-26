@@ -52,12 +52,18 @@ email: easonlee1006@gmail.com
 ### String
 | Table Size (m) |                             Index Sequence                           |     Observation      |
 |----------------|----------------------------------------------------------------------|----------------------|
-|10              | 1, 7, 8, 8, 0, 5, 9, 4, 7, 0                                         |範圍介於0 ~ m-1, index重複低, collision發生頻率較高|
-|11              | 4, 0, 3, 10, 9, 5, 4, 9, 1, 8                                        |範圍介於0 ~ m-1, index重複較高, collision發生頻率較小|
+|10              | 1, 7, 8, 8, 0, 5, 9, 4, 7, 0                                         |範圍介於0 ~ m-1, index重複較高, collision發生頻率|
+|11              | 4, 0, 3, 10, 9, 5, 4, 9, 1, 8                                        |範圍介於0 ~ m-1, index重複較低, collision發生頻率較小|
 |37              | 21, 14, 0, 14, 14, 0, 30, 5, 7, 18                                   |範圍介於0 ~ m-1, index重複低, collision發生頻率小|
 
 ## Compilation, Build, Execution, and Output ##
-### Integer ###
+### Compilation ###
+```
+#c++
+g++ .\AssignmentIV\CXX\hash_fn.c .\AssignmentIV\CXX\hash_fn.h .\AssignmentIV\CXX\main.c -o AssignmentIV_CXX.exe
+#C
+g++ -g .\AssignmentIV\C\hash_fn.c .\AssignmentIV\C\hash_fn.h .\AssignmentIV\C\main.c -o AssignmentIV_C.exe
+```
 ```
   === Hash Function Observation (C++ Version) ===
 
