@@ -42,3 +42,120 @@ email: easonlee1006@gmail.com
 
 ## Results ##
 ### Integer ###
+```
+  === Hash Function Observation (C++ Version) ===
+
+=== Table Size m = 10 ===
+Key     Index
+-----------------
+21      5
+22      2
+23      4
+24      9
+25      1
+26      6
+27      8
+28      3
+29      9
+30      8
+51      6
+52      2
+53      9
+54      7
+55      0
+56      6
+57      3
+58      9
+59      6
+60      4
+
+=== Table Size m = 11 ===
+Key     Index
+-----------------
+21      3
+22      1
+23      4
+24      7
+25      8
+26      5
+27      8
+28      7
+29      6
+30      7
+51      2
+52      10
+53      4
+54      0
+55      7
+56      3
+57      10
+58      7
+59      4
+60      1
+
+=== Table Size m = 37 ===
+Key     Index
+-----------------
+21      29
+22      3
+23      33
+24      10
+25      2
+26      14
+27      10
+28      8
+29      6
+30      33
+51      2
+52      28
+53      27
+54      23
+55      15
+56      16
+57      7
+58      15
+59      26
+60      13
+
+=== String Hash (m = 10) ===
+Key     Index
+-----------------
+cat     1
+dog     7
+bat     8
+cow     8
+ant     0
+owl     5
+bee     9
+hen     4
+pig     7
+fox     0
+
+=== String Hash (m = 11) ===
+Key     Index
+-----------------
+cat     4
+dog     0
+bat     3
+cow     10
+ant     9
+owl     5
+bee     4
+hen     9
+pig     1
+fox     8
+
+=== String Hash (m = 37) ===
+Key     Index
+-----------------
+cat     21
+dog     14
+bat     0
+cow     14
+ant     14
+owl     0
+bee     30
+hen     5
+pig     7
+fox     18
+```
