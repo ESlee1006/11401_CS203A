@@ -62,9 +62,10 @@ email: easonlee1006@gmail.com
  # c++
 g++ .\AssignmentIV\CXX\hash_fn.c .\AssignmentIV\CXX\hash_fn.h .\AssignmentIV\CXX\main.c -o AssignmentIV_CXX.exe
  # C
-g++ -g .\AssignmentIV\C\hash_fn.c .\AssignmentIV\C\hash_fn.h .\AssignmentIV\C\main.c -o AssignmentIV_C.exe
+gcc .\AssignmentIV\C\hash_fn.c .\AssignmentIV\C\hash_fn.h .\AssignmentIV\C\main.c -o AssignmentIV_C.exe
 ```
-```
+###Output###
+```text
   === Hash Function Observation (C++ Version) ===
 
 === Table Size m = 10 ===
