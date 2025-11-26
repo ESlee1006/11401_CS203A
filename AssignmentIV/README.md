@@ -19,7 +19,7 @@ email: easonlee1006@gmail.com
 
 ### Non-Integer Key ###
 #### Formula / pseudocode: ####
-```
+```text
     int myHashString(const std::string& str, int m)
 {
     uint32_t hash = 2166136261u;
@@ -58,7 +58,7 @@ email: easonlee1006@gmail.com
 
 ## Compilation, Build, Execution, and Output ##
 ### Compilation ###
-```
+```bash
  # c++
 g++ .\AssignmentIV\CXX\hash_fn.c .\AssignmentIV\CXX\hash_fn.h .\AssignmentIV\CXX\main.c -o AssignmentIV_CXX.exe
  # C
