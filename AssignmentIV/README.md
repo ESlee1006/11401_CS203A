@@ -40,7 +40,23 @@ email: easonlee1006@gmail.com
 - Compiler: GCC and G++
 - Standard: C23 and C++23
 
-## Results ##
+## Results
+
+### Integer
+| Table Size (m) |                             Index Sequence                               |     Observation      |
+|----------------|--------------------------------------------------------------------------|----------------------|
+| 10             | 5, 2, 4, 9, 1, 6, 8, 3, 9, 8, 6, 2, 9, 7, 0, 6, 3, 9, 6, 4               |範圍介於0 ~ m-1, 無規律, collision發生機率大|
+| 11             | 3, 1, 4, 7, 8, 5, 8, 7, 6, 7, 2, 10, 4, 0, 7, 3, 10, 7, 4, 1             |範圍介於0 ~ m-1, 無規律, index重複高, collision發生機率大|
+| 37             | 29, 3, 33, 10, 2, 14, 10, 8, 6, 33, 2, 28, 27, 23, 15, 16, 7, 15, 26, 13 |範圍介於0 ~ m-1, 無規律, index重複低, collision發生機率小|
+
+### String
+| Table Size (m) |                             Index Sequence                           |     Observation      |
+|----------------|----------------------------------------------------------------------|----------------------|
+|10              | 1, 7, 8, 8, 0, 5, 9, 4, 7, 0                                         |範圍介於0 ~ m-1, index重複低, collision發生頻率較高|
+|11              | 4, 0, 3, 10, 9, 5, 4, 9, 1, 8                                        |範圍介於0 ~ m-1, index重複較高, collision發生頻率較小|
+|37              | 21, 14, 0, 14, 14, 0, 30, 5, 7, 18                                   |範圍介於0 ~ m-1, index重複低, collision發生頻率小|
+
+## Compilation, Build, Execution, and Output ##
 ### Integer ###
 ```
   === Hash Function Observation (C++ Version) ===
