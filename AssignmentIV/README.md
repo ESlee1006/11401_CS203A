@@ -64,7 +64,7 @@ g++ .\AssignmentIV\CXX\hash_fn.c .\AssignmentIV\CXX\hash_fn.h .\AssignmentIV\CXX
  # C
 gcc .\AssignmentIV\C\hash_fn.c .\AssignmentIV\C\hash_fn.h .\AssignmentIV\C\main.c -o AssignmentIV_C.exe
 ```
-###Output###
+### Output ###
 ```text
   === Hash Function Observation (C++ Version) ===
 
